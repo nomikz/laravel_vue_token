@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/api_laravel/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/composer" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/fakerphp/faker" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/laravel/sanctum" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/api_laravel/vendor/laravel/tinker" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1kt1mVhMZasJfvW9ojZ9kda2TAS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="" />
+      <created>1606505232805</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606505232805</updated>
+      <workItem from="1606505233835" duration="404000" />
+    </task>
+    <task id="LOCAL-00001" summary="client">
+      <created>1606505281364</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1606505281364</updated>
+    </task>
+    <task id="LOCAL-00002" summary="client">
+      <created>1606505740001</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1606505740001</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="client" />
+    <option name="LAST_COMMIT_MESSAGE" value="client" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="427" y="127" key="CommitChangelistDialog2" timestamp="1606505739933">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="427" y="127" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606505739933" />
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606505759052">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1606505759052" />
+  </component>
+</project>
