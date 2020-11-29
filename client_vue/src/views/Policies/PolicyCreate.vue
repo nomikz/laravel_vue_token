@@ -7,6 +7,9 @@
                     width="600"
                     class="pa-7"
                 >
+                    <p class="display-1">
+                        Создать полис
+                    </p>
                     <v-form
                         ref="form"
                         v-model="valid"
@@ -42,7 +45,7 @@
                         <v-text-field
                             v-model="policy.phone"
                             :rules="policyValidation.phone"
-                            label="Номер телефона"
+                            label="Номер телефона*"
                             placeholder="+7"
                         ></v-text-field>
 
@@ -62,6 +65,7 @@
                                     range
                                     locale="ru-Latn"
                                     selected-items-text="Выберите период"
+                                    mx-auto
                                 ></v-date-picker>
                             </v-col>
                         </v-row>
@@ -88,8 +92,11 @@
         </v-row>
     </div>
 </template>
+
+
 <script>
 
+// TODO: refactor view to components.
 import Api from "@/apis/Api";
 
 export default {

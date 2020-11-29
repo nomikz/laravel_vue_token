@@ -4,21 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyList.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyShow.vue" afterDir="false" />
+    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="Readme and some minor changes.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/components/InsurancePolicies.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/components/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/components/MainMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/router/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Layouts/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Layouts/Main.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Auth/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Policies.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/PolicyCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyCreate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Auth/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/components/MainMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/components/MainMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Auth/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606505232805</updated>
       <workItem from="1606505233835" duration="404000" />
-      <workItem from="1606601609108" duration="34272000" />
+      <workItem from="1606601609108" duration="36921000" />
     </task>
     <task id="LOCAL-00001" summary="client">
       <created>1606505281364</created>
@@ -217,7 +211,21 @@
       <option name="project" value="LOCAL" />
       <updated>1606612064829</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="night coding:&#10; &#10;vuetify added.&#10;layout made.&#10;views added.&#10;router added.&#10;sign in, sing out added&#10;vuex added.">
+      <created>1606682680437</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606682680437</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Insurance creation on the backend.">
+      <created>1606682709449</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606682709449</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -228,13 +236,16 @@
     <MESSAGE value="migrations, models, factories, seeders, created." />
     <MESSAGE value="api routes, controllers, apiResources created." />
     <MESSAGE value="night coding vue. sleepy as fuck." />
-    <option name="LAST_COMMIT_MESSAGE" value="night coding vue. sleepy as fuck." />
+    <MESSAGE value="night coding:&#10; &#10;vuetify added.&#10;layout made.&#10;views added.&#10;router added.&#10;sign in, sing out added&#10;vuex added." />
+    <MESSAGE value="Insurance creation on the backend." />
+    <MESSAGE value="Readme and some minor changes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme and some minor changes." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606612064671">
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606685120189">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606612064671" />
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606685120189" />
     <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606612073660">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
@@ -247,9 +258,9 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="117" y="76" width="1334" height="914" key="find.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606682386483" />
-    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1606674219752">
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1606684961727">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606674219752" />
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606684961727" />
   </component>
 </project>

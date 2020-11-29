@@ -1,4 +1,4 @@
-# claint_vue
+# client_vue
 
 ## Project setup
 ```

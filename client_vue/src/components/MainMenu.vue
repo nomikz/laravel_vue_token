@@ -58,13 +58,14 @@
                         <v-icon>mdi-login</v-icon>
                     </v-btn>
 
-                    <v-btn
-                        :to="{ name: 'register'}"
-                        text
-                    >
-                        <span class="mr-2">Зарегистрироваться</span>
-                        <v-icon>mdi-account-plus-outline</v-icon>
-                    </v-btn>
+<!--                    TODO: style the form-->
+<!--                    <v-btn-->
+<!--                        :to="{ name: 'register'}"-->
+<!--                        text-->
+<!--                    >-->
+<!--                        <span class="mr-2">Зарегистрироваться</span>-->
+<!--                        <v-icon>mdi-account-plus-outline</v-icon>-->
+<!--                    </v-btn>-->
                 </template>
             </v-container>
         </v-app-bar>

@@ -6,6 +6,7 @@
                 :items="insurancePolicies"
                 @click:row="showItem"
                 class="elevation-1"
+                items-per-page="20"
                 hide-default-footer
             >
 

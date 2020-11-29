@@ -1,31 +1,40 @@
 <template>
     <div class="login">
         <div id="form">
-            <div>
-                <label for='email'>
-                    <input
-                        id='email'
-                        v-model='form.email'
-                        type="text"
-                    >
-                    Email
-                </label>
-            </div>
-            <div>
-                <label for='password'>
-                    <input
-                        id='password'
-                        v-model='form.password'
-                        type="text"
-                    >
-                    Password
-                </label>
-            </div>
-            <button
-                @click.prevent="login"
+            <v-card
+                class="mx-auto  mt-15"
+                max-width="420"
             >
-                Login
-            </button>
+                <v-card-text>
+                    <p class="display-1 text--primary">
+                        Войти
+                    </p>
+                    <v-form
+                        ref="form"
+                        lazy-validation
+                    >
+                        <v-text-field
+                            v-model="form.email"
+                            label="E-mail"
+                            required
+                        ></v-text-field>
+
+                        <v-text-field
+                            v-model="form.password"
+                            label="Пароль"
+                            required
+                            type="password"
+                        ></v-text-field>
+
+                        <v-btn
+                            @click.prevent="login"
+                            class="primary"
+                        >
+                            Войти
+                        </v-btn>
+                    </v-form>
+                </v-card-text>
+            </v-card>
         </div>
     </div>
 </template>

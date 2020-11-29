@@ -19,7 +19,7 @@ class InsurancePolicyController extends Controller
     {
         $policies = InsurancePolicy
             ::orderBy('created_at')
-            ->paginate(8);
+            ->paginate(20);
 
         return InsurancePolicyResource::collection($policies);
     }
