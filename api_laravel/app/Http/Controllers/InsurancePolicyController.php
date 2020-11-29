@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\InsurancePolicyCreateRequest;
 use App\Http\Resources\InsurancePolicyResource;
 use App\Models\InsurancePolicy;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 
 class InsurancePolicyController extends Controller
@@ -25,10 +27,10 @@ class InsurancePolicyController extends Controller
     /**
      * Store a newly created resource in storage.
      *
-     * @param  \Illuminate\Http\Request  $request
-     * @return InsurancePolicyResource|\Illuminate\Http\JsonResponse
+     * @param InsurancePolicyCreateRequest $request
+     * @return InsurancePolicyResource
      */
-    public function store(Request $request)
+    public function store(InsurancePolicyCreateRequest $request)
     {
         $insurancePolicy = InsurancePolicy::create($request->validated());
 
@@ -39,7 +41,7 @@ class InsurancePolicyController extends Controller
      * Display the specified resource.
      *
      * @param InsurancePolicy $insurancePolicy
-     * @return InsurancePolicyResource|\Illuminate\Http\JsonResponse|object
+     * @return InsurancePolicyResource|JsonResponse|object
      */
     public function show(InsurancePolicy $insurancePolicy)
     {
@@ -64,7 +66,7 @@ class InsurancePolicyController extends Controller
      * Remove the specified resource from storage.
      *
      * @param InsurancePolicy $insurancePolicy
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      * @throws \Exception
      */
     public function destroy(InsurancePolicy $insurancePolicy)
