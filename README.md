@@ -38,7 +38,6 @@ php artisan key:generate
 ```
 - указать доступы к бд
 - запустить миграции 
-- запустить миграции 
  ```bash
  php artisan migrate  
  ```
