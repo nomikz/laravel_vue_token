@@ -31,7 +31,8 @@
 </template>
 
 <script>
-import User from './../apis/User';
+
+import User from "@/apis/User";
 
 export default {
     data() {
@@ -46,9 +47,11 @@ export default {
         login() {
             User.login(this.form).then((response) => {
                 localStorage.setItem("token", response.data)
-                this.$router.push({ name: 'Home' })
+                this.$router.push({ name: 'Policies' });
             });
         }
+    },
+    computed: {
     }
 }
 </script>

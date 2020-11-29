@@ -1,20 +1,15 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
+import Policies from '../views/Policies'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        name: 'Home',
-        component: Home,
+        name: 'Policies',
+        component: Policies,
         meta: { authOnly: true }
-    },
-    {
-        path: '/about',
-        name: 'About',
-        component: () => import('../views/About.vue')
     },
     {
         path: '/register',
