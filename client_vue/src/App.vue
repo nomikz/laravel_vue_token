@@ -12,6 +12,9 @@ export default {
     components: {
         MainLayout,
     },
+    mounted() {
+        this.$store.dispatch('setAuthUser');
+    },
     data: () => ({
         //
     }),

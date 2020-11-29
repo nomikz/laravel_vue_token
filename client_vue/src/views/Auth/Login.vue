@@ -46,8 +46,9 @@ export default {
     methods: {
         login() {
             User.login(this.form).then((response) => {
-                localStorage.setItem("token", response.data)
-                this.$router.push({ name: 'Policies' });
+                localStorage.setItem("token", response.data);
+                this.$store.dispatch('setAuthUser');
+                this.$router.push({ name: 'policyList' });
             });
         }
     },

@@ -5,22 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/client_vue/src/components/InsurancePolicies.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_vue/src/components/Menu.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_vue/src/views/Layouts/Main.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_vue/src/views/Policies.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client_vue/src/views/PolicyCreate.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyList.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyShow.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/App.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/components/InsurancePolicies.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/components/Menu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/components/MainMenu.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_vue/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client_vue/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/store/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/About.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Home.vue" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Layouts/Main.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Layouts/Main.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Auth/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Policies.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/PolicyCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Auth/Register.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +163,13 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client_vue/src/views/Policies" />
+      <recent name="$PROJECT_DIR$/client_vue/src/views/Auth" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -175,7 +180,7 @@
       <option name="presentableId" value="Default" />
       <updated>1606505232805</updated>
       <workItem from="1606505233835" duration="404000" />
-      <workItem from="1606601609108" duration="9241000" />
+      <workItem from="1606601609108" duration="34272000" />
     </task>
     <task id="LOCAL-00001" summary="client">
       <created>1606505281364</created>
@@ -205,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606601785074</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="night coding vue. sleepy as fuck.">
+      <created>1606612064829</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606612064829</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -215,24 +227,29 @@
     <MESSAGE value="client" />
     <MESSAGE value="migrations, models, factories, seeders, created." />
     <MESSAGE value="api routes, controllers, apiResources created." />
-    <option name="LAST_COMMIT_MESSAGE" value="api routes, controllers, apiResources created." />
+    <MESSAGE value="night coding vue. sleepy as fuck." />
+    <option name="LAST_COMMIT_MESSAGE" value="night coding vue. sleepy as fuck." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606601784982">
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606612064671">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606601784982" />
-    <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606505759052">
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606612064671" />
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606612073660">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="440" y="274" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1606505759052" />
-    <state x="541" y="292" width="597" height="548" key="find.popup" timestamp="1606611714277">
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1606612073660" />
+    <state x="641" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606661256583">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="541" y="292" width="597" height="548" key="find.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606611714277" />
-    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1606609748374">
+    <state x="641" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1680.1025@0.25.1680.1025" timestamp="1606661256583" />
+    <state x="117" y="76" width="1334" height="914" key="find.popup" timestamp="1606682386483">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606609748374" />
+    <state x="117" y="76" width="1334" height="914" key="find.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606682386483" />
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1606674219752">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606674219752" />
   </component>
 </project>

@@ -5,30 +5,38 @@
             color="white"
         >
             <v-container class="py-0 fill-height">
-                <div class="d-flex align-center">
-                    <v-img
-                        alt="logo"
-                        class="mr-4"
-                        contain
-                        src="https://ffins.kz/static/img/general/logo.svg"
-                        transition="scale-transition"
-                        width="100"
-                    />
-                    |
-                    <span class="ml-4">Insurance</span>
-                </div>
+                <router-link
+                    :to="{ name: 'policyList'}"
+                    style="text-decoration: none;"
+                >
+                    <div
+                        class="d-flex align-center black--text"
+                    >
+                        <v-img
+                            alt="logo"
+                            class="mr-4"
+                            contain
+                            src="https://ffins.kz/static/img/general/logo.svg"
+                            transition="scale-transition"
+                            width="100"
+                        />
+                        |
+                        <span class="ml-4">Insurance</span>
+                    </div>
+                </router-link>
+
 
                 <v-spacer></v-spacer>
 
                 <template
-                    v-if="isLoggedIn"
+                    v-if="authUser"
                 >
                     <v-btn
-                        to="/"
+                        :to="{ name: 'policyList'}"
                         text
                     >
                         <span class="mr-2">Полисы</span>
-                        <v-icon>mdi-login</v-icon>
+                        <v-icon>mdi-format-list-bulleted</v-icon>
                     </v-btn>
 
                     <v-btn
@@ -37,13 +45,13 @@
                         text
                     >
                         <span class="mr-2">Выйти</span>
-                        <v-icon>mdi-login</v-icon>
+                        <v-icon>mdi-logout</v-icon>
                     </v-btn>
                 </template>
 
                 <template v-else>
                     <v-btn
-                        to="/login"
+                        :to="{ name: 'login'}"
                         text
                     >
                         <span class="mr-2">Войти</span>
@@ -51,7 +59,7 @@
                     </v-btn>
 
                     <v-btn
-                        to="/register"
+                        :to="{ name: 'register'}"
                         text
                     >
                         <span class="mr-2">Зарегистрироваться</span>
@@ -64,21 +72,25 @@
 </template>
 
 <script>
+import { mapState } from 'vuex';
 
 export default {
     data() {
         return {
-            isLoggedIn: false
+
         }
     },
     mounted() {
-        this.isLoggedIn = !! localStorage.getItem("token");
     },
     methods: {
         logout() {
             localStorage.removeItem("token");
-            this.$router.push({ "name": 'Login'});
+            this.$store.dispatch('logout');
+            this.$router.push({ 'name': 'login'});
         }
     },
+    computed: {
+        ...mapState(['authUser']),
+    }
 }
 </script>

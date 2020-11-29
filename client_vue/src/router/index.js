@@ -1,26 +1,39 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Policies from '../views/Policies'
+import PolicyList from '../views/Policies/PolicyList'
 
 Vue.use(VueRouter)
 
 const routes = [
     {
-        path: '/',
-        name: 'Policies',
-        component: Policies,
-        meta: { authOnly: true }
+        path: '/policies',
+        name: 'policyList',
+        component: PolicyList,
+        meta: { authOnly: true },
+    },
+    {
+        path: '/policies/create',
+        name: 'policyCreate',
+        component: () => import('../views/Policies/PolicyCreate'),
+        meta: { authOnly: true },
+    },
+    {
+        path: '/policies/:id',
+        name: 'policyShow',
+        component: () => import('../views/Policies/PolicyShow'),
+        meta: { authOnly: true },
     },
     {
         path: '/register',
-        name: 'Register',
-        component: () => import('../views/Register')
+        name: 'register',
+        component: () => import('../views/Auth/Register'),
+        meta: { guestOnly: true },
     },
     {
         path: '/login',
-        name: 'Login',
-        component: () => import('../views/Login'),
-        meta: { guestOnly: true }
+        name: 'login',
+        component: () => import('../views/Auth/Login'),
+        meta: { guestOnly: true },
     }
 ]
 
@@ -37,13 +50,13 @@ function isLoggedIn() {
 router.beforeEach((to, from, next) => {
     if (to.matched.some(record => record.meta.authOnly)) {
         if (!isLoggedIn()) {
-            next({ name: 'Login' });
+            next({ name: 'login' });
         }
 
         next();
     } else if (to.matched.some(record => record.meta.guestOnly)) {
         if (isLoggedIn()) {
-            next({ name: 'Home'} );
+            next({ name: 'policyList'} );
         }
 
         next();

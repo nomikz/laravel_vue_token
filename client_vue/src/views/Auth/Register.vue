@@ -41,7 +41,7 @@
 </template>
 
 <script>
-import User from './../apis/User';
+import User from '../../apis/User';
 
 export default {
     data () {
@@ -57,7 +57,7 @@ export default {
         register() {
             User.register(this.form)
                 .then(() => {
-                    this.$router.push({ name: "Login" });
+                    this.$router.push({ name: "login" });
                 })
                 .catch(error => {
                     if (error.response.status === 422) {

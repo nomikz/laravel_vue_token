@@ -1,23 +1,21 @@
 <template>
     <v-app>
-        <Menu />
+        <MainMenu />
 
         <v-main class="grey lighten-3">
             <v-container>
-                <v-sheet>
                     <router-view />
-                </v-sheet>
             </v-container>
         </v-main>
     </v-app>
 </template>
 
 <script>
-import Menu from "@/components/Menu";
+import MainMenu from "@/components/MainMenu";
 
 export default {
     components: {
-        Menu,
+        MainMenu,
     }
 }
 </script>
