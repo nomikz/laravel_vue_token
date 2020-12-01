@@ -16,8 +16,8 @@
                             alt="logo"
                             class="mr-4"
                             contain
-                            src="https://ffins.kz/static/img/general/logo.svg"
                             transition="scale-transition"
+                            src="https://ffins.kz/static/img/general/logo.svg"
                             width="100"
                         />
                         |
@@ -32,8 +32,10 @@
                     v-if="authUser"
                 >
                     <v-btn
+                        class="mr-2"
                         :to="{ name: 'policyList'}"
-                        text
+                        dark
+                        color="orange"
                     >
                         <span class="mr-2">Полисы</span>
                         <v-icon>mdi-format-list-bulleted</v-icon>
@@ -51,21 +53,21 @@
 
                 <template v-else>
                     <v-btn
+                        class="mr-3 primary"
                         :to="{ name: 'login'}"
-                        text
+                        color="primary"
                     >
                         <span class="mr-2">Войти</span>
                         <v-icon>mdi-login</v-icon>
                     </v-btn>
 
-<!--                    TODO: style the form-->
-<!--                    <v-btn-->
-<!--                        :to="{ name: 'register'}"-->
-<!--                        text-->
-<!--                    >-->
-<!--                        <span class="mr-2">Зарегистрироваться</span>-->
-<!--                        <v-icon>mdi-account-plus-outline</v-icon>-->
-<!--                    </v-btn>-->
+                    <v-btn
+                        :to="{ name: 'register'}"
+                        text
+                    >
+                        <span class="mr-2">Зарегистрироваться</span>
+                        <v-icon>mdi-account-plus-outline</v-icon>
+                    </v-btn>
                 </template>
             </v-container>
         </v-app-bar>
@@ -74,20 +76,22 @@
 
 <script>
 import { mapState } from 'vuex';
+import User from "@/apis/User";
 
 export default {
     data() {
         return {
-
         }
     },
     mounted() {
     },
     methods: {
         logout() {
-            localStorage.removeItem("token");
-            this.$store.dispatch('logout');
-            this.$router.push({ 'name': 'login'});
+            User.logout().then(() => {
+                localStorage.removeItem("token");
+                this.$store.dispatch('logout');
+                this.$router.push({ 'name': 'login'});
+            });
         }
     },
     computed: {

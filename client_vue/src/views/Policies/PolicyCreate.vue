@@ -1,109 +1,292 @@
 <template>
     <div>
-        <v-row>
-            <v-col cols="3"></v-col>
-            <v-col cols="6">
-                <v-card
-                    width="600"
-                    class="pa-7"
-                >
-                    <p class="display-1">
-                        Создать полис
-                    </p>
-                    <v-form
-                        ref="form"
-                        v-model="valid"
-                        lazy-validation
-                    >
+        <v-card
+            max-width="1000"
+            class="pa-5 mt-3 mx-auto"
+        >
+           <v-row>
+               <v-col cols="4">
+                   <p class="display-1">
+                       Создать полис
+                   </p>
+               </v-col>
+
+               <v-col  cols="8">
+                   <v-alert
+                       dense
+                       outlined
+                       type="error"
+                       v-if="errorMessage"
+                       v-text="errorMessage"
+                   >
+                   </v-alert>
+               </v-col>
+           </v-row>
+
+            <v-form
+                ref="form"
+                v-model="valid"
+                lazy-validation
+            >
+                <v-row>
+                    <v-col>
                         <v-text-field
                             v-model="policy.first_name"
                             :rules="policyValidation.name"
                             label="Имя*"
                             required
+                            outlined
+                            dense
                         ></v-text-field>
+                    </v-col>
 
+                    <v-col>
                         <v-text-field
                             v-model="policy.last_name"
                             :rules="policyValidation.name"
                             label="Фамилия*"
                             required
+                            outlined
+                            dense
                         ></v-text-field>
+                    </v-col>
 
+                    <v-col>
                         <v-text-field
                             v-model="policy.middle_name"
                             :rules="policyValidation.middleName"
-                            label="Очество"
+                            label="Отчество"
+                            outlined
+                            dense
                         ></v-text-field>
+                    </v-col>
+                </v-row>
 
+                <v-row>
+                    <v-col>
                         <v-text-field
                             v-model="policy.iin"
                             :rules="policyValidation.iin"
                             label="ИИН*"
                             required
+                            outlined
+                            dense
                         ></v-text-field>
+                    </v-col>
 
+                    <v-col>
                         <v-text-field
                             v-model="policy.phone"
                             :rules="policyValidation.phone"
                             label="Номер телефона*"
                             placeholder="+7"
+                            required
+                            outlined
+                            dense
                         ></v-text-field>
+                    </v-col>
 
+                    <v-col>
                         <v-text-field
                             v-model="policy.car_number"
                             :rules="policyValidation.car_number"
                             label="Гос. номер ТС*"
+                            required
+                            outlined
+                            dense
                         ></v-text-field>
+                    </v-col>
+                </v-row>
 
-
-                        <v-row>
-                            <v-col
-                                cols="12"
-                            >
-                                <v-date-picker
-                                    v-model="dates"
-                                    range
-                                    locale="ru-Latn"
-                                    selected-items-text="Выберите период"
-                                    mx-auto
-                                ></v-date-picker>
-                            </v-col>
-                        </v-row>
-
-                        <v-btn
-                            color="secondary"
-                            class="mr-4"
-                            :to="{ name: 'policyList' }"
+                <v-row>
+                    <v-col>
+                        <v-menu
+                            v-model="modal.menuValidFrom"
+                            :close-on-content-click="false"
+                            :nudge-right="40"
+                            transition="scale-transition"
+                            offset-y
+                            min-width="290px"
                         >
-                            Отменить
-                        </v-btn>
+                            <template v-slot:activator="{ on, attrs }">
+                                <v-text-field
+                                    v-model="policy.valid_from"
+                                    label="Начала срока"
+                                    prepend-icon="mdi-calendar"
+                                    readonly
+                                    v-bind="attrs"
+                                    v-on="on"
+                                    outlined
+                                    dense
+                                ></v-text-field>
+                            </template>
+                            <v-date-picker
+                                locale="ru-Latn"
+                                v-model="policy.valid_from"
+                                @input="menu2 = false"
+                            ></v-date-picker>
+                        </v-menu>
+                    </v-col>
 
-                        <v-btn
-                            color="primary"
-                            class="mr-4"
-                            :disabled="!valid"
-                            @click="submit"
+                    <v-col>
+                        <v-menu
+                            v-model="modal.menuValidUntil"
+                            :close-on-content-click="false"
+                            :nudge-right="40"
+                            transition="scale-transition"
+                            offset-y
+                            min-width="290px"
                         >
-                            Создать
+                            <template v-slot:activator="{ on, attrs }">
+                                <v-text-field
+                                    v-model="policy.valid_until"
+                                    label="Конец срока"
+                                    prepend-icon="mdi-calendar"
+                                    readonly
+                                    v-bind="attrs"
+                                    v-on="on"
+                                    outlined
+                                    dense
+                                ></v-text-field>
+                            </template>
+                            <v-date-picker
+                                locale="ru-Latn"
+                                v-model="policy.valid_until"
+                                @input="menu2 = false"
+                            ></v-date-picker>
+                        </v-menu>
+                    </v-col>
+                </v-row>
+
+                <v-divider class="mb-2"></v-divider>
+
+                <h3
+                    style="color: #111111"
+                    class="font-weight-regular mb-4"
+                >
+                    Дополнительные водители
+                </h3>
+
+
+
+                <v-row v-for="(driver, index) in additionalDrivers">
+                    <v-col>
+                        <v-text-field
+                            v-model="additionalDrivers[index].first_name"
+                            :rules="policyValidation.name"
+                            label="Имя*"
+                            required
+                            outlined
+                            dense
+                        ></v-text-field>
+                    </v-col>
+
+                    <v-col>
+                        <v-text-field
+                            v-model="additionalDrivers[index].last_name"
+                            :rules="policyValidation.name"
+                            label="Фамилия*"
+                            required
+                            outlined
+                            dense
+                        ></v-text-field>
+                    </v-col>
+
+                    <v-col>
+                        <v-text-field
+                            v-model="additionalDrivers[index].middle_name"
+                            :rules="policyValidation.middleName"
+                            label="Отчество"
+                            outlined
+                            dense
+                        ></v-text-field>
+                    </v-col>
+
+                    <v-col>
+                        <v-text-field
+                            v-model="additionalDrivers[index].iin"
+                            :rules="policyValidation.iin"
+                            label="ИИН*"
+                            required
+                            outlined
+                            dense
+                        ></v-text-field>
+                    </v-col>
+                    <v-col
+                        cols="1"
+                    >
+                        <v-btn
+                            icon
+                            color="red lighten-1"
+                            @click="deleteAdditionalDriver(index)"
+                        >
+                            <v-icon>
+                                mdi-close-thick
+                            </v-icon>
                         </v-btn>
-                    </v-form>
-                </v-card>
-            </v-col>
-        </v-row>
+                    </v-col>
+                </v-row>
+
+                <v-row
+                    align="center"
+                    justify="space-around"
+                    >
+                    <v-btn
+                        small
+                        class="mx-2"
+                        outlined
+                        dark
+                        color="indigo"
+                        @click="addAdditionalDriver"
+                    >
+                        <v-icon dark small>
+                            mdi-plus
+                        </v-icon>
+                        Добавить водителя
+                    </v-btn>
+                </v-row>
+
+                <v-divider class="my-5"></v-divider>
+
+
+                <v-btn
+                    color="secondary"
+                    class="mr-4"
+                    :to="{ name: 'policyList' }"
+                >
+                    Отменить
+                </v-btn>
+
+                <v-btn
+                    color="primary"
+                    class="mr-4"
+                    :disabled="!valid"
+                    @click="submit"
+                >
+                    Создать
+                </v-btn>
+            </v-form>
+        </v-card>
     </div>
 </template>
 
 
 <script>
-
 // TODO: refactor view to components.
 import Api from "@/apis/Api";
 
 export default {
     data: () => ({
-        dates: ['2019-09-10', '2019-09-20'],
+        modal: {
+            menuValidFrom: false,
+            menuValidUntil: false,
+        },
+        errorMessage: '',
 
-        valid: true,
+        additionalDrivers: [],
+
+        valid: false,
+
         policy: {
             first_name: '',
             last_name: '',
@@ -111,30 +294,36 @@ export default {
             iin: '',
             phone: '',
             car_number: '',
-            valid_from: '',
-            valid_until: '',
+            valid_from:  '',
+            valid_until:  '',
         },
         policyValidation: {
             name: [
                 v => !!v || 'Заполните поле',
                 function (v) { // only letters
                     // топорный вариант 😅😅
-                    const regExpForCyrillic = /^[аАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ]+$/;
-                    const regExpForLatin = /^[A-Za-z]+$/;
+                    const regExpForCyrillicAndLatin = /[A-Za-z]+|[аАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ]+/;
 
-                    if (
-                        regExpForCyrillic.test(v)
-                        || regExpForLatin.test(v)
-                    ) {
+                    if (regExpForCyrillicAndLatin.test(v)) {
                         return true
                     }
 
-                    return 'Поле может содержать только буквы';
+                    return 'Поле может содержать только символы английского и русского языка';
                 },
                 v => (v && v.length > 2) || 'Не может быть короче 2 букв',
             ],
             middleName: [
                 v => (v && (v.length > 1) || (v.length === 0)) || 'Не может быть короче 2 букв',
+                function (v) { // only letters
+                    // топорный вариант 😅😅
+                    const regExpForCyrillicAndLatin = /[A-Za-z]+|[аАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ]+/;
+
+                    if (regExpForCyrillicAndLatin.test(v) || v.length === 0) {
+                        return true
+                    }
+
+                    return 'Поле может содержать только символы английского и русского языка';
+                },
             ],
             iin: [
                 function (v) { // only digit chars
@@ -181,25 +370,24 @@ export default {
             ],
         }
     }),
-    computed: {
-        dateRangeText () {
-            return this.dates.join(' ~ ')
-        },
-    },
-
     methods: {
         submit() {
-            let data = this.policy;
-
-            if (!this.policy.middle_name) {
-                delete data['middle_name'];
+            if(!this.$refs.form.validate()) {
+                return;
             }
 
-            data.valid_from = this.dates[0];
-            data.valid_until = this.dates[1];
+            let data = this.policy;
+            data.additionalDrivers = this.additionalDrivers;
 
             Api().post('/insurance-policies', data)
                 .then((response) => {
+                    this.$store.dispatch(
+                        'setNotification',
+                        {
+                            'text': 'Страховой полис успешно создан 👍👍',
+                            'color': 'green',
+                        }
+                    );
                     const policy = response.data.data;
 
                     this.$router.push({
@@ -210,8 +398,26 @@ export default {
                     });
                 })
                 .catch((error) => {
-                    console.log(error);
+                    this.errorMessage = 'Проверьте что правильно заполнили форму!';
+
+                    setTimeout(() => {
+                        this.errorMessage = '';
+                    }, 2000);
                 });
+        },
+        addAdditionalDriver() {
+            this.additionalDrivers.push({
+                first_name: '',
+                last_name: '',
+                middle_name: '',
+                iin: '',
+            });
+        },
+        deleteAdditionalDriver(i) {
+            console.log('index: ' + i);
+            console.log(this.additionalDrivers);
+
+            this.additionalDrivers.splice(i, 1);
         }
     },
 }

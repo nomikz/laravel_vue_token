@@ -4,15 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="Readme and some minor changes.">
+    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/components/MainMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/components/MainMenu.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Auth/Login.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyCreate.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/client_vue/src/views/Policies/PolicyList.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -174,7 +167,9 @@
       <option name="presentableId" value="Default" />
       <updated>1606505232805</updated>
       <workItem from="1606505233835" duration="404000" />
-      <workItem from="1606601609108" duration="36921000" />
+      <workItem from="1606601609108" duration="37707000" />
+      <workItem from="1606710042899" duration="4000" />
+      <workItem from="1606771468392" duration="33000" />
     </task>
     <task id="LOCAL-00001" summary="client">
       <created>1606505281364</created>
@@ -225,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606682709449</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Readme and some minor changes">
+      <created>1606685205852</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606685205853</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -239,17 +241,18 @@
     <MESSAGE value="night coding:&#10; &#10;vuetify added.&#10;layout made.&#10;views added.&#10;router added.&#10;sign in, sing out added&#10;vuex added." />
     <MESSAGE value="Insurance creation on the backend." />
     <MESSAGE value="Readme and some minor changes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme and some minor changes." />
+    <MESSAGE value="Readme and some minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Readme and some minor changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606685120189">
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606685205749">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606685120189" />
-    <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606612073660">
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606685205749" />
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606685216718">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="440" y="274" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1606612073660" />
+    <state x="440" y="274" key="Vcs.Push.Dialog.v2/0.25.1680.1025@0.25.1680.1025" timestamp="1606685216718" />
     <state x="641" y="455" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1606661256583">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>

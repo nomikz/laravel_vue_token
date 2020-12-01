@@ -75,7 +75,7 @@ export default {
                 },
                 {
                     key: 'middle_name',
-                    name: 'Очество',
+                    name: 'Отчество',
                 },
                 {
                     key: 'iin',
@@ -93,7 +93,7 @@ export default {
                 },
                 {
                     key: 'middle_name',
-                    name: 'Очество',
+                    name: 'Отчество',
                 },
                 {
                     key: 'iin',

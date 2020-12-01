@@ -6,7 +6,7 @@
                 :items="insurancePolicies"
                 @click:row="showItem"
                 class="elevation-1"
-                items-per-page="20"
+                :items-per-page=20
                 hide-default-footer
             >
 
@@ -37,7 +37,7 @@
                 <template v-slot:no-data>
                     <v-btn
                         color="primary"
-                        @click="initialize"
+                        @click="loadPolicies(1)"
                     >
                         Перезагрузить
                     </v-btn>
@@ -87,7 +87,7 @@ export default {
                     sortable: false,
                 },
                 {
-                    text: 'Очество',
+                    text: 'Отчество',
                     value: 'middle_name',
                     sortable: false,
                 },

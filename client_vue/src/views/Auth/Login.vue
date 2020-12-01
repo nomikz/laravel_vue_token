@@ -2,10 +2,12 @@
     <div class="login">
         <div id="form">
             <v-card
-                class="mx-auto  mt-15"
+                class="mx-auto  mt-15 pa-5"
                 max-width="420"
             >
-                <v-card-text>
+                <v-card-text
+                    class="text-center"
+                >
                     <p class="display-1 text--primary">
                         Войти
                     </p>
@@ -54,11 +56,25 @@ export default {
     },
     methods: {
         login() {
-            User.login(this.form).then((response) => {
-                localStorage.setItem("token", response.data);
-                this.$store.dispatch('setAuthUser');
-                this.$router.push({ name: 'policyList' });
-            });
+            if(!this.$refs.form.validate()) {
+                return;
+            }
+
+            User.login(this.form)
+                .then((response) => {
+                    localStorage.setItem("token", response.data);
+                    this.$store.dispatch('setAuthUser');
+                    this.$router.push({ name: 'policyList' });
+                })
+                .catch((error) => {
+                    this.$store.dispatch(
+                        'setNotification',
+                        {
+                            text: 'Проверьте что вы правильно заполнили форму 😭😭',
+                            color: 'orange',
+                        }
+                    );
+                });
         }
     },
     computed: {
