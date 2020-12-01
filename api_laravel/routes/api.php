@@ -12,7 +12,6 @@ Route::post('login', [LoginController::class, 'login']);
 Route::middleware('auth:sanctum')->group(function () {
     Route::get('user', [UserController::class, 'me']);
     Route::post('logout', [LoginController::class, 'logout']);
-
 });
 Route::get('insurance-policies', [InsurancePolicyController::class, 'index']);
 Route::get('insurance-policies/{insurancePolicy}', [InsurancePolicyController::class, 'show']);

@@ -17,10 +17,26 @@ class RegisterController extends Controller
             'password' => ['required', 'min:8'],
         ]);
 
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => Hash::make($request->password),
-        ]);
+        try {
+            User::create([
+                'name' => $request->name,
+                'email' => $request->email,
+                'password' => Hash::make($request->password),
+            ]);
+
+            return response()->json(
+                [
+                    'message' => true
+                ],
+                201
+            );
+        } catch (\Exception $exception) {
+            return response()->json(
+                [
+                    'message' => false
+                ],
+                422
+            );
+        }
     }
 }

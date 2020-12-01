@@ -9,7 +9,7 @@ class AdditionalDriver extends Model
 {
     use HasFactory;
 
-    protected $protected = [];
+    protected $guarded = [];
 
     public function insurancePolicy()
     {

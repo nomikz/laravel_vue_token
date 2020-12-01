@@ -24,14 +24,15 @@ class InsurancePolicyCreateRequest extends FormRequest
     public function rules()
     {
         return [ // TODO: duplicate rules from frontend
-            'first_name' => 'required|min:2',
-            'last_name' => 'required|min:2',
-            'middle_name' => 'sometimes|required',
-            'iin' => 'required|size:12',
-            'phone' => 'required|size:12',
-            'car_number' => 'required|min:5|max:7',
-            'valid_from' => 'required',
-            'valid_until' => 'required',
+            'first_name' => 'required|string|min:2',
+            'last_name' => 'required|string|min:2',
+            'middle_name' => 'string|nullable',
+            'iin' => 'required|string|size:12',
+            'phone' => 'required|string|size:12',
+            'car_number' => 'required|string|min:5|max:7',
+            'valid_from' => 'required|string',
+            'valid_until' => 'required|string',
+            'additionalDrivers' => 'array',
         ];
     }
 

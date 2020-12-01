@@ -1,7 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="3063fa0b-8424-4b2f-b3f7-c1144843a143" name="Default Changelist" comment="" />
+    <list default="true" id="3063fa0b-8424-4b2f-b3f7-c1144843a143" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../client_vue/src/components/NotificationSnackbar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../client_vue/src/views/Layouts/MainLayout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/InsurancePolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/InsurancePolicyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Requests/InsurancePolicyCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/InsurancePolicyCreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/AdditionalDriver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AdditionalDriver.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/assets/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/components/MainMenu.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/components/MainMenu.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/views/Auth/Login.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/views/Auth/Login.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/views/Auth/Register.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/views/Auth/Register.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/views/Layouts/Main.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/views/Policies/PolicyCreate.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/views/Policies/PolicyCreate.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/views/Policies/PolicyList.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/views/Policies/PolicyList.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../client_vue/src/views/Policies/PolicyShow.vue" beforeDir="false" afterPath="$PROJECT_DIR$/../client_vue/src/views/Policies/PolicyShow.vue" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,6 +33,9 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -122,6 +148,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1kq2RHWIeBAyPkNnyFxlRWYAHX1" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -164,6 +191,7 @@
       <workItem from="1606460527501" duration="2173000" />
       <workItem from="1606493853305" duration="4289000" />
       <workItem from="1606547296858" duration="17368000" />
+      <workItem from="1606771509062" duration="8504000" />
     </task>
     <servers />
   </component>
@@ -175,13 +203,21 @@
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="578" y="296" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/-127.-1055.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1606448227056" />
+    <state x="430" y="127" key="CommitChangelistDialog2" timestamp="1606786304123">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="430" y="127" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606786304123" />
     <state x="507" y="267" key="NewPhpClassDialog" timestamp="1606599291105">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
     <state x="507" y="267" key="NewPhpClassDialog/0.25.1680.1025@0.25.1680.1025" timestamp="1606599291105" />
-    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1606599333574">
+    <state x="541" y="292" width="597" height="490" key="find.popup" timestamp="1606777200512">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
-    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606599333574" />
+    <state x="541" y="292" width="597" height="490" key="find.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606777200512" />
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup" timestamp="1606817251860">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="505" y="252" width="670" height="676" key="search.everywhere.popup/0.25.1680.1025@0.25.1680.1025" timestamp="1606817251860" />
   </component>
 </project>
