@@ -123,6 +123,7 @@
                             <v-date-picker
                                 locale="ru-Latn"
                                 v-model="policy.valid_from"
+                                :min="policyValidation.minDate"
                                 @input="menu2 = false"
                             ></v-date-picker>
                         </v-menu>
@@ -140,6 +141,8 @@
                             <template v-slot:activator="{ on, attrs }">
                                 <v-text-field
                                     v-model="policy.valid_until"
+                                    :rules="validUntilRules"
+                                    :disabled="policy.valid_from.length===0"
                                     label="Конец срока"
                                     prepend-icon="mdi-calendar"
                                     readonly
@@ -152,6 +155,7 @@
                             <v-date-picker
                                 locale="ru-Latn"
                                 v-model="policy.valid_until"
+                                :min="policyValidation.minDate"
                                 @input="menu2 = false"
                             ></v-date-picker>
                         </v-menu>
@@ -303,10 +307,12 @@ export default {
                 function (v) { // only letters
                     // топорный вариант 😅😅
                     const regExpForCyrillicAndLatin = /[A-Za-z]+|[аАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ]+/;
+                    const regExpForNumbers = /[0-9]+/;
 
-                    if (regExpForCyrillicAndLatin.test(v)) {
+                    if (regExpForCyrillicAndLatin.test(v) && !regExpForNumbers.test(v)) {
                         return true
                     }
+
 
                     return 'Поле может содержать только символы английского и русского языка';
                 },
@@ -317,8 +323,9 @@ export default {
                 function (v) { // only letters
                     // топорный вариант 😅😅
                     const regExpForCyrillicAndLatin = /[A-Za-z]+|[аАбБвВгГдДеЕёЁжЖзЗиИйЙкКлЛмМнНоОпПрРсСтТуУфФхХцЦчЧшШщЩъЪыЫьЬэЭюЮяЯ]+/;
+                    const regExpForNumbers = /[0-9]+/;
 
-                    if (regExpForCyrillicAndLatin.test(v) || v.length === 0) {
+                    if ((regExpForCyrillicAndLatin.test(v) && !regExpForNumbers.test(v)) || v.length === 0) {
                         return true
                     }
 
@@ -368,8 +375,23 @@ export default {
                 v => (v && v.length > 5) || 'Слишком короткий номер ТС',
                 v => (v && v.length < 8) || 'Слишком длинный номер ТС',
             ],
+            minDate: new Date().toJSON().slice(0,10).replace(/-/g,'/'),
+
         }
     }),
+    computed: {
+        validUntilRules: function () { // in computed in data(), it can't reference another data property
+                return [
+                    (v) => {
+                        if (new Date(this.policy.valid_from) < new Date(v)) {
+                            return true;
+                        }
+
+                        return 'Дата завершения не может быть раньше даты начал.';
+                    },
+                ];
+        }
+    },
     methods: {
         submit() {
             if(!this.$refs.form.validate()) {

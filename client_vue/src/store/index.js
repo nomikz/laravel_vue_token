@@ -36,7 +36,7 @@ export default new Vuex.Store({
                   commit('SET_AUTH_USER', data);
               })
               .catch(() => {
-                  commit('LOGOUT');
+                  localStorage.removeItem('token');
               })
       },
       logout({commit}) {
