@@ -21,8 +21,8 @@ class CreateInsurancePoliciesTable extends Migration
             $table->string('iin')->index();
             $table->string('phone');
             $table->string('car_number');
-            $table->dateTime('valid_from');
-            $table->dateTime('valid_until');
+            $table->date('valid_from');
+            $table->date('valid_until');
             $table->timestamps();
         });
     }

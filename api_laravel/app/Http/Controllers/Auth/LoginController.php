@@ -13,8 +13,8 @@ class LoginController extends Controller
     public function login(Request $request)
     {
         $request->validate([
-            'email' => ['required'],
-            'password' => ['required'],
+            'email' => ['required', 'string', 'max:255'],
+            'password' => ['required', 'string', 'max:255'],
         ]);
 
         $user = User
@@ -23,7 +23,9 @@ class LoginController extends Controller
 
         if (! $user || ! Hash::check($request->password, $user->password)) {
             throw ValidationException::withMessages([
-                'email' => ['Incorrect.']
+                'message' => [
+                    'Incorrect.',
+                ]
             ]);
         }
 
@@ -34,6 +36,6 @@ class LoginController extends Controller
     {
         $request->user()->tokens()->delete();
 
-        return response()->json('logout', 201);
+        return response()->json('logout', 200);
     }
 }

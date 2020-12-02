@@ -23,16 +23,89 @@ class InsurancePolicyCreateRequest extends FormRequest
      */
     public function rules()
     {
-        return [ // TODO: duplicate rules from frontend
-            'first_name' => 'required|string|min:2',
-            'last_name' => 'required|string|min:2',
-            'middle_name' => 'string|nullable',
-            'iin' => 'required|string|size:12',
-            'phone' => 'required|string|size:12',
-            'car_number' => 'required|string|min:5|max:7',
-            'valid_from' => 'required|string',
-            'valid_until' => 'required|string',
-            'additionalDrivers' => 'array',
+        return [
+            'first_name' => [
+                'required',
+                'string',
+                'min:2',
+                'max:255',
+                'not_regex:/[0-9]+/',
+            ],
+            'last_name' => [
+                'required',
+                'string',
+                'min:2',
+                'max:255',
+                'not_regex:/[0-9]+/',
+            ],
+            'middle_name' => [
+                'string',
+                'nullable',
+                'min:2',
+                'min:255',
+                'regex:/[0-9]+/',
+            ],
+            'iin' => [
+                'required',
+                'string',
+                'size:12',
+                'regex:/^\d+$/'
+            ],
+            'phone' => [
+                'required',
+                'string',
+                'size:12',
+                'regex:/^\+7\d+$/'
+            ],
+            'car_number' => [
+                'required',
+                'string',
+                'min:5',
+                'max:7'
+            ],
+            'valid_from' => [
+                'required',
+                'string',
+                'after:yesterday',
+                'date',
+            ],
+            'valid_until' => [
+                'required',
+                'string',
+                'date',
+                'after:valid_from',
+            ],
+            'additionalDrivers' => [
+                'sometimes',
+                'array',
+            ],
+            'additionalDrivers.*.first_name' => [
+                'required',
+                'string',
+                'min:2',
+                'max:255',
+                'not_regex:/[0-9]+/',
+            ],
+            'additionalDrivers.*.last_name' => [
+                'required',
+                'string',
+                'min:2',
+                'max:255',
+                'not_regex:/[0-9]+/',
+            ],
+            'additionalDrivers.*.middle_name' => [
+                'string',
+                'nullable',
+                'min:2',
+                'min:255',
+                'regex:/[0-9]+/',
+            ],
+            'additionalDrivers.*.iin' => [
+                'required',
+                'string',
+                'size:12',
+                'regex:/^\d+$/'
+            ],
         ];
     }
 

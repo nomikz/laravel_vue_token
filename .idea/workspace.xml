@@ -4,8 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="">
+    <list default="true" id="495f3d74-ee46-423b-aa3b-115233dfbca6" name="Default Changelist" comment="dates validation added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Controllers/InsurancePolicyController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/app/Http/Requests/InsurancePolicyCreateRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/app/Http/Requests/InsurancePolicyCreateRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/database/migrations/2020_11_28_123137_create_insurance_policies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/database/migrations/2020_11_28_123137_create_insurance_policies_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_laravel/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/api_laravel/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,6 +177,7 @@
       <workItem from="1606601609108" duration="37707000" />
       <workItem from="1606710042899" duration="4000" />
       <workItem from="1606771468392" duration="33000" />
+      <workItem from="1606878825862" duration="587000" />
     </task>
     <task id="LOCAL-00001" summary="client">
       <created>1606505281364</created>
@@ -227,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606685205853</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="dates validation added">
+      <created>1606878883567</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606878883567</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,13 +257,19 @@
     <MESSAGE value="Insurance creation on the backend." />
     <MESSAGE value="Readme and some minor changes." />
     <MESSAGE value="Readme and some minor changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Readme and some minor changes" />
+    <MESSAGE value="dates validation added" />
+    <option name="LAST_COMMIT_MESSAGE" value="dates validation added" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606685205749">
+    <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2" timestamp="1606879032736">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>
+    <state x="0" y="25" key="CommitChangelistDialog2/-127.-1055.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1606879032736" />
     <state x="0" y="25" width="1680" height="1025" key="CommitChangelistDialog2/0.25.1680.1025@0.25.1680.1025" timestamp="1606685205749" />
+    <state x="200" y="25" key="DiffContextDialog" timestamp="1606879028446">
+      <screen x="0" y="25" width="1680" height="1025" />
+    </state>
+    <state x="200" y="25" key="DiffContextDialog/-127.-1055.1920.1055/0.25.1680.1025@0.25.1680.1025" timestamp="1606879028446" />
     <state x="440" y="274" key="Vcs.Push.Dialog.v2" timestamp="1606685216718">
       <screen x="0" y="25" width="1680" height="1025" />
     </state>

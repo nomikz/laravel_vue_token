@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\InsurancePolicyCreateRequest;
+use App\Http\Requests\InsurancePolicyGetByIinRequest;
 use App\Http\Resources\InsurancePolicyResource;
 use App\Models\InsurancePolicy;
 use Illuminate\Http\JsonResponse;
@@ -11,6 +12,21 @@ use Illuminate\Support\Facades\Log;
 
 class InsurancePolicyController extends Controller
 {
+    /**
+     * Display a listing of the resource.
+     *
+     * @param $iin
+     * @return \Illuminate\Http\Resources\Json\AnonymousResourceCollection
+     */
+    public function getByIin($iin)
+    {
+        $policies = InsurancePolicy
+            ::where('iin', $iin)
+            ->get();
+
+        return InsurancePolicyResource::collection($policies);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -81,13 +97,14 @@ class InsurancePolicyController extends Controller
      *
      * @param \Illuminate\Http\Request $request
      * @param InsurancePolicy $insurancePolicy
-     * @return InsurancePolicyResource
+     * @return JsonResponse
      */
     public function update(Request $request, InsurancePolicy $insurancePolicy)
     {
-        $insurancePolicy->update($request->validated());
-
-        return new InsurancePolicyResource($insurancePolicy);
+         return response()->json(null, 401);
+//        $insurancePolicy->update($request->validated());
+//
+//        return new InsurancePolicyResource($insurancePolicy);
     }
 
     /**
@@ -99,8 +116,9 @@ class InsurancePolicyController extends Controller
      */
     public function destroy(InsurancePolicy $insurancePolicy)
     {
-        $insurancePolicy->delete();
-
-        return response()->json([], 204);
+        return response()->json(null, 401);
+//        $insurancePolicy->delete();
+//
+//        return response()->json([], 204);
     }
 }
